@@ -107,7 +107,7 @@ const Products = () => {
           {filteredProducts.map((product) => (
             <div
               key={product.title}
-              className="bg-white rounded-lg shadow-sm overflow-hidden flex flex-col items-center"
+              className="bg-white rounded-lg shadow-sm overflow-hidden flex flex-col items-center justify-around"
             >
               <div className="relative h-40 overflow-hidden w-full">
                 <img
@@ -116,7 +116,7 @@ const Products = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="p-4 w-full flex flex-col items-center">
+              <div className="p-4 w-full flex flex-col items-center justify-around">
                 <div className="flex items-center justify-center">
                   <div className="p-1.5 rounded-full bg-primary/10">
                     <product.icon className="h-4 w-4 text-primary" />
