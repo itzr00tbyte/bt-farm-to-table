@@ -26,7 +26,7 @@ const Navigation = () => {
               Products
             </Link>
             <Link to="/about-contact" className="text-accent-brown hover:text-primary transition-colors">
-              About & Contact
+              About
             </Link>
           </div>
 
@@ -65,7 +65,7 @@ const Navigation = () => {
               className="block px-3 py-2 text-accent-brown hover:text-primary"
               onClick={toggleMenu}
             >
-              About & Contact
+              About
             </Link>
           </div>
         </div>
