@@ -137,7 +137,7 @@ const AboutContact = () => {
                       className="min-h-[150px]"
                     />
                   </div>
-                  <Button type="submit" disabled={isSubmitting} className="w-full">
+                  <Button type="submit" disabled={isSubmitting} className="w-full text-white">
                     {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
