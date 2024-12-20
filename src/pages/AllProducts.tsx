@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Package, Wheat, Carrot, Coffee, Apple, Leaf, Flower2, ChefHat } from "lucide-react";
+import { useState } from "react";
 
 const products = [
   {
@@ -61,13 +62,26 @@ const products = [
   }
 ];
 
+const categories = [
+  { id: "all", label: "All Products" },
+  { id: "powders", label: "Powders" },
+  { id: "vegetables", label: "Vegetables" },
+  { id: "spices", label: "Spices" },
+];
+
 const AllProducts = () => {
+  const [selectedCategory, setSelectedCategory] = useState("all");
+
+  const filteredProducts = products.filter(
+    (product) => selectedCategory === "all" || product.category === selectedCategory
+  );
+
   return (
     <div className="min-h-screen">
       <Navigation />
       <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16 animate-fadeIn">
+          <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
               All Products
             </h2>
@@ -76,8 +90,24 @@ const AllProducts = () => {
             </p>
           </div>
 
+          <div className="flex justify-center mb-12 space-x-4">
+            {categories.map((category) => (
+              <button
+                key={category.id}
+                onClick={() => setSelectedCategory(category.id)}
+                className={`px-6 py-2 rounded-full transition-all duration-300 ${
+                  selectedCategory === category.id
+                    ? "bg-primary text-white"
+                    : "bg-gray-100 text-accent-brown hover:bg-gray-200"
+                }`}
+              >
+                {category.label}
+              </button>
+            ))}
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {products.map((product) => (
+            {filteredProducts.map((product) => (
               <div
                 key={product.title}
                 className="bg-white rounded-lg shadow-sm overflow-hidden"
