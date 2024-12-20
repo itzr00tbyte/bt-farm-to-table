@@ -63,17 +63,16 @@ const products = [
 ];
 
 const categories = [
-  { id: "all", label: "All Products" },
   { id: "powders", label: "Powders" },
   { id: "vegetables", label: "Vegetables" },
   { id: "spices", label: "Spices" },
 ];
 
 const Products = () => {
-  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [selectedCategory, setSelectedCategory] = useState("powders");
 
   const filteredProducts = products.filter(
-    (product) => selectedCategory === "all" || product.category === selectedCategory
+    (product) => product.category === selectedCategory
   );
 
   return (
