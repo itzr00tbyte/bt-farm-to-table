@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Package, Wheat, Carrot } from "lucide-react";
 
 const products = [
@@ -6,22 +7,38 @@ const products = [
     description: "100% natural fruit powders perfect for smoothies and baking",
     icon: Package,
     image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07",
+    category: "powders"
   },
   {
     title: "Dehydrated Vegetables",
     description: "Preserved vegetables that maintain their nutritional value",
     icon: Carrot,
     image: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843",
+    category: "vegetables"
   },
   {
     title: "Spices",
     description: "Premium quality spices sourced directly from farmers",
     icon: Wheat,
     image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
+    category: "spices"
   },
 ];
 
+const categories = [
+  { id: "all", label: "All Products" },
+  { id: "powders", label: "Powders" },
+  { id: "vegetables", label: "Vegetables" },
+  { id: "spices", label: "Spices" },
+];
+
 const Products = () => {
+  const [selectedCategory, setSelectedCategory] = useState("all");
+
+  const filteredProducts = products.filter(
+    (product) => selectedCategory === "all" || product.category === selectedCategory
+  );
+
   return (
     <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,8 +51,24 @@ const Products = () => {
           </p>
         </div>
 
+        <div className="flex justify-center mb-12 space-x-4">
+          {categories.map((category) => (
+            <button
+              key={category.id}
+              onClick={() => setSelectedCategory(category.id)}
+              className={`px-6 py-2 rounded-full transition-colors duration-300 ${
+                selectedCategory === category.id
+                  ? "bg-primary text-white"
+                  : "bg-gray-100 text-accent-brown hover:bg-gray-200"
+              }`}
+            >
+              {category.label}
+            </button>
+          ))}
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          {products.map((product) => (
+          {filteredProducts.map((product) => (
             <div
               key={product.title}
               className="group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 ease-in-out"
