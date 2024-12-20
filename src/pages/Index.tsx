@@ -4,6 +4,7 @@ import Products from "@/components/Products";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
 import Certifications from "@/components/Certifications";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <WhyChooseUs />
       <Testimonials />
       <Certifications />
+      <Footer />
     </div>
   );
 };
