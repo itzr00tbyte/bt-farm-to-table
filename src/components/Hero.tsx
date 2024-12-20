@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  "https://images.unsplash.com/photo-1472396961693-142e6e269027",
-  "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9",
-  "https://images.unsplash.com/photo-1518495973542-4542c06a5843"
+  "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=1920&h=1080&fit=crop&auto=format",
+  "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?q=80&w=1920&h=1080&fit=crop&auto=format",
+  "https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=1920&h=1080&fit=crop&auto=format"
 ];
 
 const Hero = () => {
