@@ -120,7 +120,7 @@ const Products = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
               <div className="p-6">
-                <div className="flex items-center mb-4">
+                <div className="flex items-center">
                   <div className="p-2 rounded-full bg-primary/10">
                     <product.icon className="h-5 w-5 text-primary" />
                   </div>
@@ -128,24 +128,6 @@ const Products = () => {
                     {product.title}
                   </h3>
                 </div>
-                <p className="text-accent-brown text-base mb-4">{product.description}</p>
-                <button className="inline-flex items-center text-accent-gold hover:text-primary font-semibold transition-colors group-hover:translate-x-2 duration-300">
-                  Learn More
-                  <svg
-                    className="ml-2 w-5 h-5"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17 8l4 4m0 0l-4 4m4-4H3"
-                    />
-                  </svg>
-                </button>
               </div>
             </div>
           ))}
