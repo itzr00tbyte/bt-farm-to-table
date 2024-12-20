@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { Package, Wheat, Carrot } from "lucide-react";
+import { Package, Wheat, Carrot, Coffee, Apple, Leaf, Flower2, ChefHat } from "lucide-react";
 
 const products = [
   {
     title: "Fruit Powders",
     description: "100% natural fruit powders perfect for smoothies and baking",
-    icon: Package,
+    icon: Apple,
     image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07",
     category: "powders"
   },
@@ -17,12 +17,47 @@ const products = [
     category: "vegetables"
   },
   {
-    title: "Spices",
+    title: "Premium Spices",
     description: "Premium quality spices sourced directly from farmers",
     icon: Wheat,
     image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
     category: "spices"
   },
+  {
+    title: "Organic Coffee",
+    description: "Sustainably sourced and roasted coffee beans",
+    icon: Coffee,
+    image: "https://images.unsplash.com/photo-1447933601403-0c6688de566e",
+    category: "powders"
+  },
+  {
+    title: "Herbal Blends",
+    description: "Custom blended herbs for natural wellness",
+    icon: Leaf,
+    image: "https://images.unsplash.com/photo-1515150144380-bca9f1650ed9",
+    category: "spices"
+  },
+  {
+    title: "Root Vegetables",
+    description: "Carefully preserved root vegetables",
+    icon: Package,
+    image: "https://images.unsplash.com/photo-1518843875459-f738682238a6",
+    category: "vegetables"
+  },
+  {
+    title: "Edible Flowers",
+    description: "Dried edible flowers for culinary decoration",
+    icon: Flower2,
+    image: "https://images.unsplash.com/photo-1496062031456-07b8f162a322",
+    category: "spices"
+  },
+  {
+    title: "Baking Mixes",
+    description: "Pre-mixed natural baking ingredients",
+    icon: ChefHat,
+    image: "https://images.unsplash.com/photo-1486427944299-d1955d23e34d",
+    category: "powders"
+  }
 ];
 
 const categories = [
@@ -67,13 +102,13 @@ const Products = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {filteredProducts.map((product) => (
             <div
               key={product.title}
               className="group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 ease-in-out"
             >
-              <div className="relative h-56 overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
                 <img
                   src={product.image}
                   alt={product.title}
@@ -81,16 +116,16 @@ const Products = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
-              <div className="p-8">
+              <div className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="p-2 rounded-full bg-primary/10">
-                    <product.icon className="h-6 w-6 text-primary" />
+                    <product.icon className="h-5 w-5 text-primary" />
                   </div>
-                  <h3 className="ml-3 text-2xl font-semibold text-primary">
+                  <h3 className="ml-3 text-xl font-semibold text-primary">
                     {product.title}
                   </h3>
                 </div>
-                <p className="text-accent-brown text-lg mb-6">{product.description}</p>
+                <p className="text-accent-brown text-base mb-4">{product.description}</p>
                 <button className="inline-flex items-center text-accent-gold hover:text-primary font-semibold transition-colors group-hover:translate-x-2 duration-300">
                   Learn More
                   <svg
