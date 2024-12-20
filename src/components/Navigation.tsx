@@ -25,11 +25,8 @@ const Navigation = () => {
             <Link to="/all-products" className="text-accent-brown hover:text-primary transition-colors">
               Products
             </Link>
-            <Link to="/about" className="text-accent-brown hover:text-primary transition-colors">
-              About Us
-            </Link>
-            <Link to="/contact" className="text-accent-brown hover:text-primary transition-colors">
-              Contact
+            <Link to="/about-contact" className="text-accent-brown hover:text-primary transition-colors">
+              About & Contact
             </Link>
           </div>
 
@@ -64,18 +61,11 @@ const Navigation = () => {
               Products
             </Link>
             <Link
-              to="/about"
+              to="/about-contact"
               className="block px-3 py-2 text-accent-brown hover:text-primary"
               onClick={toggleMenu}
             >
-              About Us
-            </Link>
-            <Link
-              to="/contact"
-              className="block px-3 py-2 text-accent-brown hover:text-primary"
-              onClick={toggleMenu}
-            >
-              Contact
+              About & Contact
             </Link>
           </div>
         </div>
