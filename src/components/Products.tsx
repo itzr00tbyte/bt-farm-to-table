@@ -91,9 +91,9 @@ const Products = () => {
             <button
               key={category.id}
               onClick={() => setSelectedCategory(category.id)}
-              className={`px-6 py-2 rounded-full transition-colors duration-300 ${
+              className={`px-6 py-2 rounded-full transition-all duration-300 transform hover:scale-105 ${
                 selectedCategory === category.id
-                  ? "bg-primary text-white"
+                  ? "bg-primary text-white scale-105"
                   : "bg-gray-100 text-accent-brown hover:bg-gray-200"
               }`}
             >
@@ -106,7 +106,10 @@ const Products = () => {
           {filteredProducts.map((product) => (
             <div
               key={product.title}
-              className="group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 ease-in-out"
+              className="group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 ease-in-out animate-[wiggle_1s_ease-in-out]"
+              style={{
+                animation: 'wiggle 1s ease-in-out',
+              }}
             >
               <div className="relative h-48 overflow-hidden">
                 <img
