@@ -22,7 +22,7 @@ const Navigation = () => {
             <Link to="/" className="text-accent-brown hover:text-primary transition-colors">
               Home
             </Link>
-            <Link to="/products" className="text-accent-brown hover:text-primary transition-colors">
+            <Link to="/all-products" className="text-accent-brown hover:text-primary transition-colors">
               Products
             </Link>
             <Link to="/about" className="text-accent-brown hover:text-primary transition-colors">
@@ -57,7 +57,7 @@ const Navigation = () => {
               Home
             </Link>
             <Link
-              to="/products"
+              to="/all-products"
               className="block px-3 py-2 text-accent-brown hover:text-primary"
               onClick={toggleMenu}
             >
