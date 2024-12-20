@@ -1,73 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Package, Wheat, Carrot, Coffee, Apple, Leaf, Flower2, ChefHat } from "lucide-react";
 import { useState } from "react";
-
-const products = [
-  {
-    title: "Fruit Powders",
-    description: "100% natural fruit powders perfect for smoothies and baking",
-    icon: Apple,
-    image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07",
-    category: "powders"
-  },
-  {
-    title: "Dehydrated Vegetables",
-    description: "Preserved vegetables that maintain their nutritional value",
-    icon: Carrot,
-    image: "https://images.unsplash.com/photo-1523712999610-f77fbcfc3843",
-    category: "vegetables"
-  },
-  {
-    title: "Premium Spices",
-    description: "Premium quality spices sourced directly from farmers",
-    icon: Wheat,
-    image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb",
-    category: "spices"
-  },
-  {
-    title: "Organic Coffee",
-    description: "Sustainably sourced and roasted coffee beans",
-    icon: Coffee,
-    image: "https://images.unsplash.com/photo-1447933601403-0c6688de566e",
-    category: "powders"
-  },
-  {
-    title: "Herbal Blends",
-    description: "Custom blended herbs for natural wellness",
-    icon: Leaf,
-    image: "https://images.unsplash.com/photo-1515150144380-bca9f1650ed9",
-    category: "spices"
-  },
-  {
-    title: "Root Vegetables",
-    description: "Carefully preserved root vegetables",
-    icon: Package,
-    image: "https://images.unsplash.com/photo-1518843875459-f738682238a6",
-    category: "vegetables"
-  },
-  {
-    title: "Edible Flowers",
-    description: "Dried edible flowers for culinary decoration",
-    icon: Flower2,
-    image: "https://images.unsplash.com/photo-1496062031456-07b8f162a322",
-    category: "spices"
-  },
-  {
-    title: "Baking Mixes",
-    description: "Pre-mixed natural baking ingredients",
-    icon: ChefHat,
-    image: "https://images.unsplash.com/photo-1486427944299-d1955d23e34d",
-    category: "powders"
-  }
-];
-
-const categories = [
-  { id: "all", label: "All Products" },
-  { id: "powders", label: "Powders" },
-  { id: "vegetables", label: "Vegetables" },
-  { id: "spices", label: "Spices" },
-];
+import { products, categories } from "@/data/products";
 
 const AllProducts = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -91,6 +25,16 @@ const AllProducts = () => {
           </div>
 
           <div className="flex justify-center mb-12 space-x-4">
+            <button
+              onClick={() => setSelectedCategory("all")}
+              className={`px-6 py-2 rounded-full transition-all duration-300 ${
+                selectedCategory === "all"
+                  ? "bg-primary text-white"
+                  : "bg-gray-100 text-accent-brown hover:bg-gray-200"
+              }`}
+            >
+              All Products
+            </button>
             {categories.map((category) => (
               <button
                 key={category.id}
