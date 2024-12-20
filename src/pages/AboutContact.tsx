@@ -52,106 +52,61 @@ const AboutContact = () => {
     <div className="min-h-screen">
       <Navigation />
       <div className="pt-24 pb-16 px-4 max-w-6xl mx-auto">
-        {/* About Section */}
-        <section className="mb-16">
-          <h1 className="text-4xl font-bold text-primary mb-8 text-center">About Us</h1>
-          <div className="space-y-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h2 className="text-2xl font-semibold text-accent-burgundy mb-4">Our Story</h2>
-              <p className="text-gray-700 leading-relaxed">
-                BT Foods has been at the forefront of sustainable food production since our inception. 
-                We believe in bringing the freshest, highest-quality products from farm to table, 
-                while supporting local farmers and maintaining environmentally conscious practices.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h2 className="text-2xl font-semibold text-accent-burgundy mb-4">Our Mission</h2>
-              <p className="text-gray-700 leading-relaxed">
-                Our mission is to provide exceptional food products while promoting sustainable 
-                agriculture and supporting local farming communities. We strive to maintain the 
-                highest standards of quality while ensuring environmental responsibility.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h2 className="text-2xl font-semibold text-accent-burgundy mb-4">Our Values</h2>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="space-y-2">
-                  <h3 className="text-xl font-semibold text-primary">Quality</h3>
-                  <p className="text-gray-700">We never compromise on the quality of our products.</p>
+        <h1 className="text-4xl font-bold text-primary mb-8 text-center">Contact Us</h1>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="space-y-6">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h2 className="text-2xl font-semibold text-accent-burgundy mb-4">Get in Touch</h2>
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                    Name
+                  </label>
+                  <Input
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Your name"
+                  />
                 </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-semibold text-primary">Sustainability</h3>
-                  <p className="text-gray-700">Environmental responsibility is at our core.</p>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                    Email
+                  </label>
+                  <Input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    placeholder="Your email"
+                  />
                 </div>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-semibold text-primary">Community</h3>
-                  <p className="text-gray-700">Supporting local farmers and communities.</p>
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+                    Message
+                  </label>
+                  <Textarea
+                    id="message"
+                    name="message"
+                    required
+                    placeholder="Your message"
+                    className="min-h-[150px]"
+                  />
                 </div>
-              </div>
+                <Button type="submit" disabled={isSubmitting} className="w-full">
+                  {isSubmitting ? "Sending..." : "Send Message"}
+                </Button>
+              </form>
             </div>
           </div>
-        </section>
 
-        {/* Contact Section */}
-        <section>
-          <h1 className="text-4xl font-bold text-primary mb-8 text-center">Contact Us</h1>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-6">
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h2 className="text-2xl font-semibold text-accent-burgundy mb-4">Get in Touch</h2>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                      Name
-                    </label>
-                    <Input
-                      id="name"
-                      name="name"
-                      required
-                      placeholder="Your name"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                      Email
-                    </label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      required
-                      placeholder="Your email"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                      Message
-                    </label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      required
-                      placeholder="Your message"
-                      className="min-h-[150px]"
-                    />
-                  </div>
-                  <Button type="submit" disabled={isSubmitting} className="w-full">
-                    {isSubmitting ? "Sending..." : "Send Message"}
-                  </Button>
-                </form>
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h2 className="text-2xl font-semibold text-accent-burgundy mb-4">Our Location</h2>
-                <Map />
-              </div>
+          <div className="space-y-6">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h2 className="text-2xl font-semibold text-accent-burgundy mb-4">Our Location</h2>
+              <Map />
             </div>
           </div>
-        </section>
+        </div>
       </div>
       <Footer />
     </div>
