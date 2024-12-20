@@ -102,29 +102,25 @@ const Products = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {filteredProducts.map((product) => (
             <div
               key={product.title}
-              className="group bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 ease-in-out animate-[wiggle_1s_ease-in-out]"
-              style={{
-                animation: 'wiggle 1s ease-in-out',
-              }}
+              className="bg-white rounded-lg shadow-sm overflow-hidden"
             >
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative h-40 overflow-hidden">
                 <img
                   src={product.image}
                   alt={product.title}
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
-              <div className="p-6">
+              <div className="p-4">
                 <div className="flex items-center">
-                  <div className="p-2 rounded-full bg-primary/10">
-                    <product.icon className="h-5 w-5 text-primary" />
+                  <div className="p-1.5 rounded-full bg-primary/10">
+                    <product.icon className="h-4 w-4 text-primary" />
                   </div>
-                  <h3 className="ml-3 text-xl font-semibold text-primary">
+                  <h3 className="ml-2 text-lg font-semibold text-primary">
                     {product.title}
                   </h3>
                 </div>
