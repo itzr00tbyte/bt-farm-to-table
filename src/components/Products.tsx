@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Package, Wheat, Carrot, Coffee, Apple, Leaf, Flower2, ChefHat } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Button } from "./ui/button";
 
 const products = [
   {
@@ -127,6 +129,14 @@ const Products = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 text-center">
+          <Link to="/all-products">
+            <Button variant="outline" size="lg">
+              View All Products
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
