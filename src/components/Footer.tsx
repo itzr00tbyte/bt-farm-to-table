@@ -51,17 +51,20 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <div className="space-y-4">
-              <div className="flex items-center space-x-3">
-                <MapPin className="h-5 w-5 text-accent-gold" />
-                <span className="text-gray-200">123 Farm Road, Agricultural District</span>
+              <div className="flex items-start space-x-3">
+                <MapPin className="h-5 w-5 text-accent-gold mt-1 flex-shrink-0" />
+                <span className="text-gray-200">
+                  7-13, Unnava, Edlapdu, Guntur<br />
+                  Andhra Pradesh - 522233
+                </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-accent-gold" />
-                <span className="text-gray-200">+1 (555) 123-4567</span>
+                <span className="text-gray-200">+917893533766</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-accent-gold" />
-                <span className="text-gray-200">info@btfoods.com</span>
+                <span className="text-gray-200">info@BalaTradeElite.com</span>
               </div>
             </div>
           </div>
