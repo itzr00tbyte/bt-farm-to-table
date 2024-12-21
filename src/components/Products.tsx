@@ -27,7 +27,11 @@ const Products = () => {
             <Button
               variant={selectedCategory === "all" ? "default" : "outline"}
               onClick={() => setSelectedCategory("all")}
-              className="min-w-[120px]"
+              className={`min-w-[120px] ${
+                selectedCategory === "all"
+                  ? "bg-primary hover:bg-primary/90 text-white"
+                  : "border-primary text-primary hover:bg-primary/10"
+              }`}
             >
               All Products
             </Button>
@@ -36,7 +40,11 @@ const Products = () => {
                 key={category.id}
                 variant={selectedCategory === category.id ? "default" : "outline"}
                 onClick={() => setSelectedCategory(category.id)}
-                className="min-w-[120px]"
+                className={`min-w-[120px] ${
+                  selectedCategory === category.id
+                    ? "bg-primary hover:bg-primary/90 text-white"
+                    : "border-primary text-primary hover:bg-primary/10"
+                }`}
               >
                 {category.label}
               </Button>
