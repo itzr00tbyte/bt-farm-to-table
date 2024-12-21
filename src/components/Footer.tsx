@@ -19,17 +19,26 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-200 hover:text-accent-gold transition-colors">
+                <Link 
+                  to="/" 
+                  className="text-gray-200 hover:text-accent-gold transition-colors duration-200 inline-block"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/all-products" className="text-gray-200 hover:text-accent-gold transition-colors">
+                <Link 
+                  to="/all-products" 
+                  className="text-gray-200 hover:text-accent-gold transition-colors duration-200 inline-block"
+                >
                   Products
                 </Link>
               </li>
               <li>
-                <Link to="/about-contact" className="text-gray-200 hover:text-accent-gold transition-colors">
+                <Link 
+                  to="/about-contact" 
+                  className="text-gray-200 hover:text-accent-gold transition-colors duration-200 inline-block"
+                >
                   About
                 </Link>
               </li>
@@ -40,10 +49,38 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Our Products</h3>
             <ul className="space-y-2">
-              <li className="text-gray-200">Fruit Powders</li>
-              <li className="text-gray-200">Vegetable Powders</li>
-              <li className="text-gray-200">Dehydrated Vegetables</li>
-              <li className="text-gray-200">Spices</li>
+              <li>
+                <Link 
+                  to="/all-products" 
+                  className="text-gray-200 hover:text-accent-gold transition-colors duration-200 inline-block"
+                >
+                  Fruit Powders
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/all-products" 
+                  className="text-gray-200 hover:text-accent-gold transition-colors duration-200 inline-block"
+                >
+                  Vegetable Powders
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/all-products" 
+                  className="text-gray-200 hover:text-accent-gold transition-colors duration-200 inline-block"
+                >
+                  Dehydrated Vegetables
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/all-products" 
+                  className="text-gray-200 hover:text-accent-gold transition-colors duration-200 inline-block"
+                >
+                  Spices
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -53,18 +90,33 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-accent-gold mt-1 flex-shrink-0" />
-                <span className="text-gray-200">
+                <a 
+                  href="https://maps.google.com/?q=7-13,+Unnava,+Edlapdu,+Guntur,+Andhra+Pradesh+-+522233" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-200 hover:text-accent-gold transition-colors duration-200"
+                >
                   7-13, Unnava, Edlapdu, Guntur<br />
                   Andhra Pradesh - 522233
-                </span>
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-accent-gold" />
-                <span className="text-gray-200">+917893533766</span>
+                <a 
+                  href="tel:+917893533766" 
+                  className="text-gray-200 hover:text-accent-gold transition-colors duration-200"
+                >
+                  +917893533766
+                </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-accent-gold" />
-                <span className="text-gray-200">info@BalaTradeElite.com</span>
+                <a 
+                  href="mailto:info@BalaTradeElite.com" 
+                  className="text-gray-200 hover:text-accent-gold transition-colors duration-200"
+                >
+                  info@BalaTradeElite.com
+                </a>
               </div>
             </div>
           </div>
