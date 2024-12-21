@@ -6,9 +6,8 @@ import { products, categories } from "@/data/products";
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("fruit-powders");
 
-  const filteredProducts = products.filter(
-    (product) => product.category === selectedCategory
-  );
+  // Get first 8 products regardless of category for initial display
+  const displayProducts = products.slice(0, 8);
 
   return (
     <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
@@ -22,44 +21,29 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="flex justify-center mb-12 space-x-4">
-          {categories.map((category) => (
-            <button
-              key={category.id}
-              onClick={() => setSelectedCategory(category.id)}
-              className={`px-6 py-2 rounded-full transition-all duration-300 ${
-                selectedCategory === category.id
-                  ? "bg-primary text-white"
-                  : "bg-gray-100 text-accent-brown hover:bg-gray-200"
-              }`}
-            >
-              {category.label}
-            </button>
-          ))}
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
-          {filteredProducts.map((product) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          {displayProducts.map((product) => (
             <div
               key={product.title}
-              className="bg-white rounded-lg shadow-sm overflow-hidden flex flex-col items-center justify-around"
+              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
             >
-              <div className="relative h-40 overflow-hidden w-full">
+              <div className="relative h-48 overflow-hidden">
                 <img
                   src={product.image}
                   alt={product.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
                 />
               </div>
-              <div className="p-4 w-full flex flex-col items-center justify-around">
-                <div className="flex items-center justify-center">
-                  <div className="p-1.5 rounded-full bg-primary/10">
-                    <product.icon className="h-4 w-4 text-primary" />
+              <div className="p-6">
+                <div className="flex items-center mb-3">
+                  <div className="p-2 rounded-full bg-primary/10">
+                    <product.icon className="h-5 w-5 text-primary" />
                   </div>
-                  <h3 className="ml-2 text-lg font-semibold text-primary">
+                  <h3 className="ml-3 text-lg font-semibold text-primary">
                     {product.title}
                   </h3>
                 </div>
+                <p className="text-gray-600 text-sm mb-4">{product.description}</p>
               </div>
             </div>
           ))}
@@ -67,7 +51,7 @@ const Products = () => {
 
         <div className="mt-12 text-center">
           <Link to="/all-products">
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" className="hover:bg-primary hover:text-white transition-colors">
               View All Products
             </Button>
           </Link>
