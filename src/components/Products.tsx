@@ -4,10 +4,12 @@ import { useState } from "react";
 import { products, categories } from "@/data/products";
 
 const Products = () => {
-  const [selectedCategory, setSelectedCategory] = useState("fruit-powders");
+  const [selectedCategory, setSelectedCategory] = useState("all");
 
-  // Get first 8 products regardless of category for initial display
-  const displayProducts = products.slice(0, 8);
+  // Filter products based on selected category
+  const filteredProducts = selectedCategory === "all" 
+    ? products.slice(0, 8) 
+    : products.filter(product => product.category === selectedCategory).slice(0, 8);
 
   return (
     <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
@@ -16,13 +18,34 @@ const Products = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
             Our Products
           </h2>
-          <p className="text-lg md:text-xl text-accent-brown max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-accent-brown max-w-2xl mx-auto mb-8">
             From farm to table, we deliver premium quality ingredients that preserve nature's goodness
           </p>
+
+          {/* Category Filter Buttons */}
+          <div className="flex flex-wrap justify-center gap-3 mb-12">
+            <Button
+              variant={selectedCategory === "all" ? "default" : "outline"}
+              onClick={() => setSelectedCategory("all")}
+              className="min-w-[120px]"
+            >
+              All Products
+            </Button>
+            {categories.map((category) => (
+              <Button
+                key={category.id}
+                variant={selectedCategory === category.id ? "default" : "outline"}
+                onClick={() => setSelectedCategory(category.id)}
+                className="min-w-[120px]"
+              >
+                {category.label}
+              </Button>
+            ))}
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          {displayProducts.map((product) => (
+          {filteredProducts.map((product) => (
             <div
               key={product.title}
               className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
