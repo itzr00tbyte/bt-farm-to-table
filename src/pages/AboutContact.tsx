@@ -12,7 +12,7 @@ const AboutContact = () => {
           <h1 className="text-4xl font-bold text-primary mb-8 text-center">About Us</h1>
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h2 className="text-2xl font-semibold text-accent-burgundy mb-4">Our Story</h2>
+              <h2 className="text-2xl font-semibold text-primary-dark mb-4">Our Story</h2>
               <p className="text-foreground leading-relaxed">
                 BT Foods has been at the forefront of sustainable food production since our inception. 
                 We believe in bringing the freshest, highest-quality products from farm to table, 
@@ -21,7 +21,7 @@ const AboutContact = () => {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h2 className="text-2xl font-semibold text-accent-burgundy mb-4">Our Mission</h2>
+              <h2 className="text-2xl font-semibold text-primary-dark mb-4">Our Mission</h2>
               <p className="text-foreground leading-relaxed">
                 Our mission is to provide exceptional food products while promoting sustainable 
                 agriculture and supporting local farming communities. We strive to maintain the 
@@ -30,7 +30,7 @@ const AboutContact = () => {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h2 className="text-2xl font-semibold text-accent-burgundy mb-4">Our Values</h2>
+              <h2 className="text-2xl font-semibold text-primary-dark mb-4">Our Values</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="space-y-2">
                   <h3 className="text-xl font-semibold text-primary">Quality</h3>
