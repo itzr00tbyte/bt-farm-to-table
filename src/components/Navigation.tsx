@@ -23,7 +23,7 @@ const Navigation = () => {
                 alt="BT Foods Logo"
                 className="h-16 w-auto object-contain"
               />
-              <span className="text-primary text-2xl font-bold hidden sm:block">
+              <span className="text-primary text-3xl font-bold hidden sm:block">
                 BT Foods
               </span>
             </Link>
@@ -33,19 +33,19 @@ const Navigation = () => {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               to="/"
-              className="text-primary hover:text-accent-gold transition-colors duration-200 font-bold text-lg tracking-wide"
+              className="text-primary hover:text-accent-gold transition-colors duration-200 font-bold text-xl tracking-wide"
             >
               Home
             </Link>
             <Link
               to="/all-products"
-              className="text-primary hover:text-accent-gold transition-colors duration-200 font-bold text-lg tracking-wide"
+              className="text-primary hover:text-accent-gold transition-colors duration-200 font-bold text-xl tracking-wide"
             >
               Products
             </Link>
             <Link
               to="/about-contact"
-              className="text-primary hover:text-accent-gold transition-colors duration-200 font-bold text-lg tracking-wide"
+              className="text-primary hover:text-accent-gold transition-colors duration-200 font-bold text-xl tracking-wide"
             >
               About & Contact
             </Link>
@@ -75,21 +75,21 @@ const Navigation = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
               to="/"
-              className="block px-3 py-2 rounded-md text-primary hover:text-accent-gold transition-colors duration-200 font-bold text-lg"
+              className="block px-3 py-2 rounded-md text-primary hover:text-accent-gold transition-colors duration-200 font-bold text-xl"
               onClick={() => setIsOpen(false)}
             >
               Home
             </Link>
             <Link
               to="/all-products"
-              className="block px-3 py-2 rounded-md text-primary hover:text-accent-gold transition-colors duration-200 font-bold text-lg"
+              className="block px-3 py-2 rounded-md text-primary hover:text-accent-gold transition-colors duration-200 font-bold text-xl"
               onClick={() => setIsOpen(false)}
             >
               Products
             </Link>
             <Link
               to="/about-contact"
-              className="block px-3 py-2 rounded-md text-primary hover:text-accent-gold transition-colors duration-200 font-bold text-lg"
+              className="block px-3 py-2 rounded-md text-primary hover:text-accent-gold transition-colors duration-200 font-bold text-xl"
               onClick={() => setIsOpen(false)}
             >
               About & Contact
