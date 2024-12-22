@@ -1,6 +1,5 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import Map from "@/components/Map";
 import ContactForm from "@/components/ContactForm";
 
 const AboutContact = () => {
@@ -53,14 +52,8 @@ const AboutContact = () => {
         {/* Contact Section */}
         <section>
           <h2 className="text-4xl font-bold text-primary mb-8 text-center">Contact Us</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="max-w-xl mx-auto">
             <ContactForm />
-            <div className="space-y-6">
-              <div className="bg-white p-6 rounded-lg shadow-sm">
-                <h2 className="text-2xl font-semibold text-accent-burgundy mb-4">Our Location</h2>
-                <Map />
-              </div>
-            </div>
           </div>
         </section>
       </div>
