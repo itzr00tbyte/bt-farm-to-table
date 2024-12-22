@@ -2,9 +2,9 @@ import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  "https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=1920&h=1080&fit=crop&auto=format",
-  "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?q=80&w=1920&h=1080&fit=crop&auto=format",
-  "https://images.unsplash.com/photo-1518495973542-4542c06a5843?q=80&w=1920&h=1080&fit=crop&auto=format"
+  "/custom-image-1.jpg",  // Replace these paths with your actual image paths
+  "/custom-image-2.jpg",  // These should be placed in your public directory
+  "/custom-image-3.jpg"   // and referenced with paths relative to public/
 ];
 
 const Hero = () => {
