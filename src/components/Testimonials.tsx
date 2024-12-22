@@ -2,21 +2,21 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Johnson",
+    name: "Rajesh Krishnan",
     role: "Restaurant Owner",
-    content: "The quality of BT Foods' products has significantly improved our dishes. Their commitment to natural ingredients is outstanding.",
+    content: "BT Foods' spices and dehydrated vegetables have truly enhanced our South Indian dishes. Their quality is exceptional, especially for our sambar and rasam preparations.",
     rating: 5
   },
   {
-    name: "Michael Chen",
+    name: "Lakshmi Venkatesh",
     role: "Food Distributor",
-    content: "Reliable supplier with consistent quality. Their sustainable practices and support for local farmers make them stand out.",
+    content: "As a distributor in Chennai, I can vouch for BT Foods' commitment to quality. Their products meet the high standards demanded by South Indian cuisine.",
     rating: 5
   },
   {
-    name: "Emma Davis",
-    role: "Health Food Store Owner",
-    content: "Our customers love the natural and organic products from BT Foods. The quality speaks for itself.",
+    name: "Priya Sundaram",
+    role: "Organic Store Owner",
+    content: "Our customers particularly love their curry leaf powder and other authentic South Indian spice blends. The quality is consistently excellent.",
     rating: 5
   }
 ];
@@ -27,10 +27,10 @@ const Testimonials = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fadeIn">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            What Our Clients Say
+            Customer Testimonials
           </h2>
           <p className="text-lg md:text-xl text-accent-brown max-w-2xl mx-auto">
-            Don't just take our word for it
+            Trusted by South Indian Businesses
           </p>
         </div>
 
