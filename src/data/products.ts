@@ -3,6 +3,7 @@ import { Apple, Package, Wheat, Carrot, Leaf } from "lucide-react";
 export const products = [
   // Fruit Powders
   {
+    id: "banana-powder",
     title: "Banana Powder",
     description: "100% natural banana powder perfect for smoothies and baking",
     icon: Apple,
@@ -10,6 +11,7 @@ export const products = [
     category: "fruit-powders"
   },
   {
+    id: "mango-powder",
     title: "Mango Powder",
     description: "Premium quality mango powder",
     icon: Apple,
@@ -17,6 +19,7 @@ export const products = [
     category: "fruit-powders"
   },
   {
+    id: "chiku-powder",
     title: "Chiku Powder",
     description: "Fresh and natural chiku powder",
     icon: Apple,
@@ -25,6 +28,7 @@ export const products = [
   },
   // Vegetable Powders
   {
+    id: "tomato-powder",
     title: "Tomato Powder",
     description: "Concentrated tomato powder for cooking",
     icon: Carrot,
@@ -32,6 +36,7 @@ export const products = [
     category: "vegetable-powders"
   },
   {
+    id: "spinach-powder",
     title: "Spinach Powder",
     description: "Nutrient-rich spinach powder",
     icon: Leaf,
@@ -39,6 +44,7 @@ export const products = [
     category: "vegetable-powders"
   },
   {
+    id: "beetroot-powder",
     title: "Beetroot Powder",
     description: "Natural beetroot powder",
     icon: Carrot,
@@ -46,6 +52,7 @@ export const products = [
     category: "vegetable-powders"
   },
   {
+    id: "carrot-powder",
     title: "Carrot Powder",
     description: "Vitamin-rich carrot powder",
     icon: Carrot,
@@ -53,6 +60,7 @@ export const products = [
     category: "vegetable-powders"
   },
   {
+    id: "ginger-powder",
     title: "Ginger Powder",
     description: "Aromatic ginger powder",
     icon: Package,
@@ -60,6 +68,7 @@ export const products = [
     category: "vegetable-powders"
   },
   {
+    id: "garlic-powder",
     title: "Garlic Powder",
     description: "Flavorful garlic powder",
     icon: Package,
@@ -67,6 +76,7 @@ export const products = [
     category: "vegetable-powders"
   },
   {
+    id: "white-onion-powder",
     title: "White Onion Powder",
     description: "Premium white onion powder",
     icon: Package,
@@ -74,6 +84,7 @@ export const products = [
     category: "vegetable-powders"
   },
   {
+    id: "red-onion-powder",
     title: "Red Onion Powder",
     description: "Aromatic red onion powder",
     icon: Package,
@@ -81,6 +92,7 @@ export const products = [
     category: "vegetable-powders"
   },
   {
+    id: "moringa-powder",
     title: "Moringa Powder",
     description: "Nutrient-dense moringa powder",
     icon: Leaf,
@@ -89,6 +101,7 @@ export const products = [
   },
   // Spices
   {
+    id: "chilli",
     title: "Chilli",
     description: "Fresh whole chilli",
     icon: Wheat,
@@ -96,6 +109,7 @@ export const products = [
     category: "spices"
   },
   {
+    id: "chilli-powder",
     title: "Chilli Powder",
     description: "Premium quality chilli powder",
     icon: Wheat,
@@ -104,6 +118,7 @@ export const products = [
   },
   // Dehydrated Vegetables
   {
+    id: "dehydrated-tomato",
     title: "Dehydrated Tomato",
     description: "Sun-dried tomatoes",
     icon: Package,
@@ -111,6 +126,7 @@ export const products = [
     category: "dehydrated"
   },
   {
+    id: "dehydrated-beetroot",
     title: "Dehydrated Beetroot",
     description: "Crispy dehydrated beetroot",
     icon: Package,
@@ -118,6 +134,7 @@ export const products = [
     category: "dehydrated"
   },
   {
+    id: "dehydrated-carrot",
     title: "Dehydrated Carrot",
     description: "Crunchy dehydrated carrots",
     icon: Carrot,
@@ -125,6 +142,7 @@ export const products = [
     category: "dehydrated"
   },
   {
+    id: "dehydrated-ginger",
     title: "Dehydrated Ginger",
     description: "Preserved ginger pieces",
     icon: Package,
@@ -132,6 +150,7 @@ export const products = [
     category: "dehydrated"
   },
   {
+    id: "dehydrated-garlic",
     title: "Dehydrated Garlic",
     description: "Dehydrated garlic flakes",
     icon: Package,
@@ -139,6 +158,7 @@ export const products = [
     category: "dehydrated"
   },
   {
+    id: "dehydrated-white-onion",
     title: "Dehydrated White Onion",
     description: "Crispy white onion pieces",
     icon: Package,
@@ -146,6 +166,7 @@ export const products = [
     category: "dehydrated"
   },
   {
+    id: "dehydrated-red-onion",
     title: "Dehydrated Red Onion",
     description: "Crispy red onion pieces",
     icon: Package,
