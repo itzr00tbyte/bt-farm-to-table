@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
 import { useState } from "react";
-import { products, categories } from "@/data/products";
+import { products, categories } from "../data/products";
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
