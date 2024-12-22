@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
+import { Users, Globe, MessageCircle } from "lucide-react";
 
 const AboutContact = () => {
   return (
@@ -9,7 +10,10 @@ const AboutContact = () => {
       <div className="pt-24 pb-16 px-4 max-w-6xl mx-auto">
         {/* About Section */}
         <section className="mb-16">
-          <h1 className="text-4xl font-extrabold text-primary mb-8 text-center">About Us</h1>
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <Users className="w-8 h-8 text-primary" />
+            <h1 className="text-4xl font-extrabold text-primary text-center">About Us</h1>
+          </div>
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-lg shadow-sm">
               <h2 className="text-2xl font-bold text-primary-dark mb-4">Our Story</h2>
@@ -33,15 +37,24 @@ const AboutContact = () => {
               <h2 className="text-2xl font-bold text-primary-dark mb-4">Our Values</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-primary">Quality</h3>
+                  <div className="flex items-center gap-2">
+                    <Globe className="w-5 h-5 text-primary" />
+                    <h3 className="text-xl font-bold text-primary">Quality</h3>
+                  </div>
                   <p className="text-foreground font-medium">We never compromise on the quality of our products.</p>
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-primary">Sustainability</h3>
+                  <div className="flex items-center gap-2">
+                    <Globe className="w-5 h-5 text-primary" />
+                    <h3 className="text-xl font-bold text-primary">Sustainability</h3>
+                  </div>
                   <p className="text-foreground font-medium">Environmental responsibility is at our core.</p>
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-primary">Community</h3>
+                  <div className="flex items-center gap-2">
+                    <Globe className="w-5 h-5 text-primary" />
+                    <h3 className="text-xl font-bold text-primary">Community</h3>
+                  </div>
                   <p className="text-foreground font-medium">Supporting local farmers and communities.</p>
                 </div>
               </div>
@@ -51,7 +64,10 @@ const AboutContact = () => {
 
         {/* Contact Section */}
         <section>
-          <h2 className="text-4xl font-extrabold text-primary mb-8 text-center">Contact Us</h2>
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <MessageCircle className="w-8 h-8 text-primary" />
+            <h2 className="text-4xl font-extrabold text-primary text-center">Contact Us</h2>
+          </div>
           <div className="max-w-xl mx-auto">
             <ContactForm />
           </div>
