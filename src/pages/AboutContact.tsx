@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm";
 
 const AboutContact = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gray-50">
       <Navigation />
       <div className="pt-24 pb-16 px-4 max-w-6xl mx-auto">
         {/* About Section */}
