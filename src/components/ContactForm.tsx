@@ -84,7 +84,11 @@ const ContactForm = () => {
             className="min-h-[150px]"
           />
         </div>
-        <Button type="submit" disabled={isSubmitting} className="w-full">
+        <Button 
+          type="submit" 
+          disabled={isSubmitting} 
+          className="w-full bg-primary hover:bg-primary-dark text-white font-semibold py-2 px-4 rounded-md shadow-sm transition-colors duration-200 hover:shadow-md"
+        >
           {isSubmitting ? "Sending..." : "Send Message"}
         </Button>
       </form>
