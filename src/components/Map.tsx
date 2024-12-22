@@ -15,13 +15,13 @@ const Map = () => {
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
       style: 'mapbox://styles/mapbox/streets-v12',
-      center: [78.4867, 17.3850], // Hyderabad coordinates
+      center: [80.4534, 16.2893], // Unnava coordinates
       zoom: 12
     });
 
-    // Add marker for Hyderabad
+    // Add marker for Unnava
     new mapboxgl.Marker()
-      .setLngLat([78.4867, 17.3850])
+      .setLngLat([80.4534, 16.2893])
       .addTo(map.current);
 
     // Add navigation controls
