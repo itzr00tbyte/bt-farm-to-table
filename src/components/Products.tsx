@@ -44,9 +44,9 @@ const Products = () => {
           {filteredProducts.map((product) => (
             <div
               key={product.id}
-              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full"
             >
-              <div className="aspect-w-4 aspect-h-3">
+              <div className="relative aspect-square w-full overflow-hidden">
                 <img
                   src={product.image}
                   alt={product.title}
@@ -54,14 +54,16 @@ const Products = () => {
                   loading="lazy"
                 />
               </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-primary">
+              <div className="p-6 flex flex-col flex-grow">
+                <h3 className="text-xl font-semibold mb-3 text-primary">
                   {product.title}
                 </h3>
-                <p className="text-gray-600 mb-4">{product.description}</p>
+                <p className="text-gray-600 mb-4 flex-grow">
+                  {product.description}
+                </p>
                 <Button
                   onClick={() => handleEnquiry(product.title)}
-                  className="w-full bg-accent-gold hover:bg-primary text-white"
+                  className="w-full bg-accent-gold hover:bg-primary text-white mt-auto"
                 >
                   Enquire Now
                 </Button>
