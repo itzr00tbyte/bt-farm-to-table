@@ -1,19 +1,19 @@
 const certifications = [
   {
     name: "USDA Organic",
-    image: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843",
+    image: "https://placehold.co/200x100/026633/FFFFFF?text=USDA+Organic",
   },
   {
     name: "Non-GMO Project",
-    image: "https://images.unsplash.com/photo-1607000975985-760647ed2c7f",
+    image: "https://placehold.co/200x100/4a2619/FFFFFF?text=Non-GMO+Project",
   },
   {
     name: "Fair Trade Certified",
-    image: "https://images.unsplash.com/photo-1607000975937-3dd036e9b3d3",
+    image: "https://placehold.co/200x100/cf9817/FFFFFF?text=Fair+Trade",
   },
   {
     name: "ISO 22000",
-    image: "https://images.unsplash.com/photo-1607000975874-cab61699e56b",
+    image: "https://placehold.co/200x100/6e2b3e/FFFFFF?text=ISO+22000",
   }
 ];
 
