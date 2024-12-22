@@ -56,11 +56,12 @@ const AllProducts = () => {
                 key={product.title}
                 className="bg-white rounded-lg shadow-sm overflow-hidden"
               >
-                <div className="relative h-40 overflow-hidden">
+                <div className="relative aspect-square overflow-hidden">
                   <img
                     src={product.image}
                     alt={product.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
                   />
                 </div>
                 <div className="p-4">
