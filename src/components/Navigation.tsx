@@ -23,7 +23,7 @@ const Navigation = () => {
                 alt="BT Foods Logo"
                 className="h-16 w-auto object-contain"
               />
-              <span className="text-primary text-xl font-semibold hidden sm:block">
+              <span className="text-primary text-2xl font-bold hidden sm:block">
                 BT Foods
               </span>
             </Link>
