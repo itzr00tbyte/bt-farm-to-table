@@ -1,10 +1,9 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
-import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/", // Changed to "/" for Vercel
+  base: "/",
   server: {
     host: "::",
     port: 8080,
@@ -13,7 +12,7 @@ export default defineConfig(({ mode }) => ({
     outDir: "dist",
     assetsDir: "assets",
     sourcemap: mode === "development",
-    minify: "esbuild", // Changed from terser to esbuild
+    minify: "esbuild",
     rollupOptions: {
       output: {
         manualChunks: {
@@ -22,14 +21,6 @@ export default defineConfig(({ mode }) => ({
       },
     },
   },
-  plugins: [
-    react(),
-    mode === 'development' &&
-    componentTagger(),
-  ].filter(Boolean),
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
-    },
-  },
+  plugins: [react(), componentTagger()],
+  publicDir: "public",
 }));
