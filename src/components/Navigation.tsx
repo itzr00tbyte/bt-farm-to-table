@@ -33,19 +33,19 @@ const Navigation = () => {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               to="/"
-              className="text-primary hover:text-accent-gold transition-colors duration-200 font-bold text-xl tracking-wide"
+              className="text-primary hover:text-accent-gold transition-all duration-300 font-bold text-xl tracking-wide transform hover:scale-110 hover:animate-wiggle"
             >
               Home
             </Link>
             <Link
               to="/all-products"
-              className="text-primary hover:text-accent-gold transition-colors duration-200 font-bold text-xl tracking-wide"
+              className="text-primary hover:text-accent-gold transition-all duration-300 font-bold text-xl tracking-wide transform hover:scale-110 hover:animate-wiggle"
             >
               Products
             </Link>
             <Link
               to="/about-contact"
-              className="text-primary hover:text-accent-gold transition-colors duration-200 font-bold text-xl tracking-wide"
+              className="text-primary hover:text-accent-gold transition-all duration-300 font-bold text-xl tracking-wide transform hover:scale-110 hover:animate-wiggle"
             >
               About & Contact
             </Link>
@@ -75,21 +75,21 @@ const Navigation = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
               to="/"
-              className="block px-3 py-2 rounded-md text-primary hover:text-accent-gold transition-colors duration-200 font-bold text-xl"
+              className="block px-3 py-2 rounded-md text-primary hover:text-accent-gold transition-all duration-300 font-bold text-xl transform hover:scale-110 hover:animate-wiggle"
               onClick={() => setIsOpen(false)}
             >
               Home
             </Link>
             <Link
               to="/all-products"
-              className="block px-3 py-2 rounded-md text-primary hover:text-accent-gold transition-colors duration-200 font-bold text-xl"
+              className="block px-3 py-2 rounded-md text-primary hover:text-accent-gold transition-all duration-300 font-bold text-xl transform hover:scale-110 hover:animate-wiggle"
               onClick={() => setIsOpen(false)}
             >
               Products
             </Link>
             <Link
               to="/about-contact"
-              className="block px-3 py-2 rounded-md text-primary hover:text-accent-gold transition-colors duration-200 font-bold text-xl"
+              className="block px-3 py-2 rounded-md text-primary hover:text-accent-gold transition-all duration-300 font-bold text-xl transform hover:scale-110 hover:animate-wiggle"
               onClick={() => setIsOpen(false)}
             >
               About & Contact
