@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "./", // This ensures assets are loaded correctly
+  base: "/", // Changed to "/" for Vercel
   server: {
     host: "::",
     port: 8080,
@@ -12,8 +12,8 @@ export default defineConfig(({ mode }) => ({
   build: {
     outDir: "dist",
     assetsDir: "assets",
-    sourcemap: false,
-    minify: "terser",
+    sourcemap: mode === "development",
+    minify: "esbuild", // Changed from terser to esbuild
     rollupOptions: {
       output: {
         manualChunks: {
