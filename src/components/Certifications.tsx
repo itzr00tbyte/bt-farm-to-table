@@ -11,7 +11,7 @@ const certifications = [
   },
   {
     name: "GST",
-    image: "./Images/Certifications/gst-logo.png",
+    image: "./Images/Certifications/gst-logo.jpeg",
     description: "Goods and Services Tax Registration"
   },
   {
