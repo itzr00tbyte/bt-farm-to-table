@@ -1,131 +1,61 @@
-import { Mail, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white pt-16 pb-8">
+    <footer className="bg-gray-900 text-white py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-          {/* Company Info */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Logo and Company Info */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold mb-4">BT Foods</h3>
-            <p className="text-gray-200">
-              Committed to providing high-quality, sustainable food products while supporting local farmers.
+            <Link to="/" className="block">
+              <img
+                src="/Images/BT Foods Logo File HQ.png"
+                alt="BT Foods Logo"
+                className="h-16 w-auto object-contain"
+              />
+            </Link>
+            <p className="text-gray-400">
+              Delivering quality ingredients from farm to table with care and sustainability.
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+          {/* Links */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link 
-                  to="/" 
-                  className="text-gray-200 hover:text-accent-gold transition-colors duration-200 inline-block"
-                >
-                  Home
-                </Link>
+                <Link to="/" className="text-gray-400 hover:text-white">Home</Link>
               </li>
               <li>
-                <Link 
-                  to="/all-products" 
-                  className="text-gray-200 hover:text-accent-gold transition-colors duration-200 inline-block"
-                >
-                  Products
-                </Link>
+                <Link to="/all-products" className="text-gray-400 hover:text-white">Products</Link>
               </li>
               <li>
-                <Link 
-                  to="/about-contact" 
-                  className="text-gray-200 hover:text-accent-gold transition-colors duration-200 inline-block"
-                >
-                  About
-                </Link>
+                <Link to="/about-contact" className="text-gray-400 hover:text-white">About & Contact</Link>
               </li>
             </ul>
           </div>
 
-          {/* Products */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">Our Products</h3>
+          {/* Social Media */}
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold">Follow Us</h3>
             <ul className="space-y-2">
               <li>
-                <Link 
-                  to="/all-products" 
-                  className="text-gray-200 hover:text-accent-gold transition-colors duration-200 inline-block"
-                >
-                  Fruit Powders
-                </Link>
+                <a href="#" className="text-gray-400 hover:text-white">Facebook</a>
               </li>
               <li>
-                <Link 
-                  to="/all-products" 
-                  className="text-gray-200 hover:text-accent-gold transition-colors duration-200 inline-block"
-                >
-                  Vegetable Powders
-                </Link>
+                <a href="#" className="text-gray-400 hover:text-white">Twitter</a>
               </li>
               <li>
-                <Link 
-                  to="/all-products" 
-                  className="text-gray-200 hover:text-accent-gold transition-colors duration-200 inline-block"
-                >
-                  Dehydrated Vegetables
-                </Link>
-              </li>
-              <li>
-                <Link 
-                  to="/all-products" 
-                  className="text-gray-200 hover:text-accent-gold transition-colors duration-200 inline-block"
-                >
-                  Spices
-                </Link>
+                <a href="#" className="text-gray-400 hover:text-white">Instagram</a>
               </li>
             </ul>
           </div>
 
           {/* Contact Info */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-accent-gold mt-1 flex-shrink-0" />
-                <a 
-                  href="https://maps.google.com/?q=7-13,+Unnava,+Edlapdu,+Guntur,+Andhra+Pradesh+-+522233" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-200 hover:text-accent-gold transition-colors duration-200"
-                >
-                  7-13, Unnava, Edlapdu, Guntur<br />
-                  Andhra Pradesh - 522233
-                </a>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-accent-gold" />
-                <a 
-                  href="tel:+917893533766" 
-                  className="text-gray-200 hover:text-accent-gold transition-colors duration-200"
-                >
-                  +917893533766
-                </a>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-accent-gold" />
-                <a 
-                  href="mailto:info@BalaTradeElite.com" 
-                  className="text-gray-200 hover:text-accent-gold transition-colors duration-200"
-                >
-                  info@BalaTradeElite.com
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Bottom Bar */}
-        <div className="border-t border-gray-600 pt-8">
-          <div className="text-center text-gray-300">
-            <p>&copy; {new Date().getFullYear()} BT Foods. All rights reserved.</p>
+          <div className="space-y-4">
+            <h3 className="text-lg font-semibold">Contact Us</h3>
+            <p className="text-gray-400">Email: info@btfoods.com</p>
+            <p className="text-gray-400">Phone: (123) 456-7890</p>
           </div>
         </div>
       </div>
