@@ -33,7 +33,6 @@ const Hero = () => {
       updateSlides();
     };
 
-    // Add event listeners
     document.querySelector('.next-button')?.addEventListener('click', nextSlide);
     document.querySelector('.prev-button')?.addEventListener('click', prevSlide);
     
@@ -41,10 +40,8 @@ const Hero = () => {
       indicator.addEventListener('click', () => goToSlide(index));
     });
 
-    // Start automatic slideshow
     const slideInterval = setInterval(nextSlide, 5000);
 
-    // Cleanup
     return () => {
       clearInterval(slideInterval);
       document.querySelector('.next-button')?.removeEventListener('click', nextSlide);
@@ -56,38 +53,40 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative h-screen w-full overflow-hidden" id="hero-carousel">
+    <div className="relative h-screen w-full overflow-hidden bg-gradient-to-r from-purple-300 via-pink-200 to-red-300" id="hero-carousel">
       <div className="carousel-container relative h-full">
         <div className="carousel-slide absolute inset-0 transition-opacity duration-1000 opacity-100">
-          <img src="./Images/Fruits Powders/banana powder.jpg" alt="Banana Powder" className="object-cover w-full h-full" />
-          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-pink-500/20"></div>
+          <img src="./Images/Fruits Powders/banana powder.jpg" alt="Banana Powder" className="object-cover w-full h-full opacity-40" />
         </div>
         <div className="carousel-slide absolute inset-0 transition-opacity duration-1000 opacity-0">
-          <img src="./Images/Veg Powders/beetroot.webp" alt="Beetroot Powder" className="object-cover w-full h-full" />
-          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-pink-500/20"></div>
+          <img src="./Images/Veg Powders/beetroot.webp" alt="Beetroot Powder" className="object-cover w-full h-full opacity-40" />
         </div>
         <div className="carousel-slide absolute inset-0 transition-opacity duration-1000 opacity-0">
-          <img src="./Images/Dehydrated Veg/carrot dehydrated.avif" alt="Dehydrated Carrot" className="object-cover w-full h-full" />
-          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-600/20 to-pink-500/20"></div>
+          <img src="./Images/Dehydrated Veg/carrot dehydrated.avif" alt="Dehydrated Carrot" className="object-cover w-full h-full opacity-40" />
         </div>
       </div>
 
-      <div className="absolute inset-0 flex items-center justify-center text-center">
-        <div className="max-w-4xl px-4 animate-fadeIn">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+      <div className="absolute inset-0 flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-12">
+        <div className="max-w-2xl space-y-6 text-left">
+          <h1 className="text-5xl md:text-7xl font-bold text-purple-900 leading-tight animate-fadeIn">
             Natural & Sustainable Food Products
           </h1>
-          <p className="text-xl md:text-2xl text-white mb-8">
+          <p className="text-xl md:text-2xl text-purple-800 mb-8 animate-fadeIn" style={{ animationDelay: '0.2s' }}>
             From farm to table, we deliver quality ingredients with care
           </p>
-          <button className="bg-accent-gold hover:bg-primary text-white font-bold py-3 px-8 rounded-lg transition-colors">
-            Explore Products
-          </button>
+          <div className="flex items-center space-x-4 animate-fadeIn" style={{ animationDelay: '0.4s' }}>
+            <button className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-8 rounded-full transition-all transform hover:scale-105 shadow-lg">
+              Explore Products
+            </button>
+          </div>
         </div>
       </div>
 
       <button
-        className="prev-button absolute left-4 top-1/2 transform -translate-y-1/2 text-white p-2 rounded-full bg-black bg-opacity-50 hover:bg-opacity-75 transition-colors"
+        className="prev-button absolute left-4 top-1/2 transform -translate-y-1/2 text-purple-900 p-3 rounded-full bg-white/80 hover:bg-white transition-colors shadow-lg"
         aria-label="Previous slide"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
@@ -96,7 +95,7 @@ const Hero = () => {
       </button>
 
       <button
-        className="next-button absolute right-4 top-1/2 transform -translate-y-1/2 text-white p-2 rounded-full bg-black bg-opacity-50 hover:bg-opacity-75 transition-colors"
+        className="next-button absolute right-4 top-1/2 transform -translate-y-1/2 text-purple-900 p-3 rounded-full bg-white/80 hover:bg-white transition-colors shadow-lg"
         aria-label="Next slide"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
@@ -104,17 +103,17 @@ const Hero = () => {
         </svg>
       </button>
 
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-3">
         <button
-          className="slide-indicator w-2 h-2 rounded-full bg-white transition-colors"
+          className="slide-indicator w-3 h-3 rounded-full bg-white shadow-lg transition-all hover:scale-110"
           aria-label="Go to slide 1"
         ></button>
         <button
-          className="slide-indicator w-2 h-2 rounded-full bg-white/50 transition-colors"
+          className="slide-indicator w-3 h-3 rounded-full bg-white/50 shadow-lg transition-all hover:scale-110"
           aria-label="Go to slide 2"
         ></button>
         <button
-          className="slide-indicator w-2 h-2 rounded-full bg-white/50 transition-colors"
+          className="slide-indicator w-3 h-3 rounded-full bg-white/50 shadow-lg transition-all hover:scale-110"
           aria-label="Go to slide 3"
         ></button>
       </div>
