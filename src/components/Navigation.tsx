@@ -21,7 +21,7 @@ const Navigation = () => {
               <img
                 src="/Images/BT Foods Logo File HQ.png"
                 alt="BT Foods Logo"
-                className="h-16 w-auto object-contain"
+                className="h-16 w-auto object-contain brightness-0 invert"
               />
               <span className="text-primary text-3xl font-bold hidden sm:block">
                 BT Foods
