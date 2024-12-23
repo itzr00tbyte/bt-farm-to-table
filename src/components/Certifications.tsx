@@ -21,7 +21,7 @@ const certifications = [
   },
   {
     name: "UDHYAM",
-    image: "./Images/Certifications/udhyam-logo.png",
+    image: "./Images/Certifications/udhyam-logo.webp",
     description: "MSME Registration Certificate"
   },
   {
