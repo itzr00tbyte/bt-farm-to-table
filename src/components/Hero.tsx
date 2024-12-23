@@ -33,7 +33,6 @@ const Hero = () => {
       updateSlides();
     };
 
-    // Add event listeners
     document.querySelector('.next-button')?.addEventListener('click', nextSlide);
     document.querySelector('.prev-button')?.addEventListener('click', prevSlide);
     
@@ -41,10 +40,8 @@ const Hero = () => {
       indicator.addEventListener('click', () => goToSlide(index));
     });
 
-    // Start automatic slideshow
     const slideInterval = setInterval(nextSlide, 5000);
 
-    // Cleanup
     return () => {
       clearInterval(slideInterval);
       document.querySelector('.next-button')?.removeEventListener('click', nextSlide);
@@ -77,15 +74,27 @@ const Hero = () => {
         <div className="w-1/2 relative">
           <div className="carousel-container relative h-full">
             <div className="carousel-slide absolute inset-0 transition-opacity duration-1000 opacity-100">
-              <img src="./Images/Fruits Powders/banana powder.jpg" alt="Banana Powder" className="object-cover w-full h-full" />
+              <img 
+                src="./Images/Fruits Powders/banana powder.jpg" 
+                alt="Banana Powder" 
+                className="w-full h-full object-cover object-center"
+              />
               <div className="absolute inset-0 bg-black bg-opacity-20"></div>
             </div>
             <div className="carousel-slide absolute inset-0 transition-opacity duration-1000 opacity-0">
-              <img src="./Images/Veg Powders/beetroot.webp" alt="Beetroot Powder" className="object-cover w-full h-full" />
+              <img 
+                src="./Images/Veg Powders/beetroot.webp" 
+                alt="Beetroot Powder" 
+                className="w-full h-full object-cover object-center"
+              />
               <div className="absolute inset-0 bg-black bg-opacity-20"></div>
             </div>
             <div className="carousel-slide absolute inset-0 transition-opacity duration-1000 opacity-0">
-              <img src="./Images/Dehydrated Veg/carrot dehydrated.avif" alt="Dehydrated Carrot" className="object-cover w-full h-full" />
+              <img 
+                src="./Images/Dehydrated Veg/carrot dehydrated.avif" 
+                alt="Dehydrated Carrot" 
+                className="w-full h-full object-cover object-center"
+              />
               <div className="absolute inset-0 bg-black bg-opacity-20"></div>
             </div>
           </div>
