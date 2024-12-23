@@ -1,7 +1,6 @@
 import { Apple, Package, Wheat, Carrot, Leaf } from "lucide-react";
 
 export const products = [
-  // Fruit Powders
   {
     title: "Banana Powder",
     description: "100% natural banana powder perfect for smoothies and baking",
