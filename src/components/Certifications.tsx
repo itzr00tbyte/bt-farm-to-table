@@ -16,7 +16,7 @@ const certifications = [
   },
   {
     name: "IEC",
-    image: "./Images/Certifications/iec-logo.jpg",
+    image: "./Images/Certifications/iec-logo.webp",
     description: "Import Export Code"
   },
   {
