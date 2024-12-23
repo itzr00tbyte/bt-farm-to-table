@@ -26,7 +26,7 @@ const certifications = [
   },
   {
     name: "INCORPORATION",
-    image: "./Images/Certifications/incorporation-logo.png",
+    image: null,
     description: "Certificate of Incorporation"
   }
 ];
@@ -50,11 +50,17 @@ const Certifications = () => {
               key={cert.name}
               className="flex flex-col items-center justify-center p-8 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-300"
             >
-              <img
-                src={cert.image}
-                alt={cert.name}
-                className="h-20 w-auto mb-4 grayscale hover:grayscale-0 transition-all duration-300"
-              />
+              {cert.image ? (
+                <img
+                  src={cert.image}
+                  alt={cert.name}
+                  className="h-20 w-auto mb-4 grayscale hover:grayscale-0 transition-all duration-300"
+                />
+              ) : (
+                <div className="h-20 w-auto mb-4 flex items-center justify-center text-2xl font-bold text-primary">
+                  {cert.name}
+                </div>
+              )}
               <h3 className="text-lg font-semibold text-primary">{cert.name}</h3>
               <p className="text-sm text-gray-600 text-center mt-2">{cert.description}</p>
             </div>
