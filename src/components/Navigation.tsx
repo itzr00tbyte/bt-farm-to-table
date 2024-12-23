@@ -19,7 +19,7 @@ const Navigation = () => {
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center space-x-3">
               <img
-                src="/Images/BT Foods Logo File HQ.png"
+                src="https://raw.githubusercontent.com/yourusername/your-repo/main/Images/BT%20Foods%20Logo%20File%20HQ.png"
                 alt="BT Foods Logo"
                 className="h-16 w-auto object-contain"
               />

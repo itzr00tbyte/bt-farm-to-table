@@ -6,14 +6,14 @@ export const products = [
     title: "Banana Powder",
     description: "100% natural banana powder perfect for smoothies and baking",
     icon: Apple,
-    image: "./Images/Fruits Powders/banana powder.jpg",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Fruits%20Powders/banana%20powder.jpg",
     category: "fruit-powders"
   },
   {
     title: "Mango Powder",
     description: "Premium quality mango powder",
     icon: Apple,
-    image: "./Images/Fruits Powders/mango powder.jpg",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Fruits%20Powders/mango%20powder.jpg",
     category: "fruit-powders"
   },
   {
@@ -23,12 +23,13 @@ export const products = [
     image: "./Images/Fruits Powders/chiku powder.webp",
     category: "fruit-powders"
   },
+
   // Vegetable Powders
   {
     title: "Tomato Powder",
     description: "Concentrated tomato powder for cooking",
     icon: Carrot,
-    image: "./Images/Veg Powders/tomato.jpg",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Veg%20Powders/tomato.jpg",
     category: "vegetable-powders"
   },
   {
@@ -87,12 +88,13 @@ export const products = [
     image: "./Images/Veg Powders/moringa.webp",
     category: "vegetable-powders"
   },
+
   // Spices
   {
     title: "Chilli",
     description: "Fresh whole chilli",
     icon: Wheat,
-    image: "./Images/Spices/chilli.jpg",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Spices/chilli.jpg",
     category: "spices"
   },
   {
@@ -102,12 +104,13 @@ export const products = [
     image: "./Images/Spices/chillipowder.jpg",
     category: "spices"
   },
+
   // Dehydrated Vegetables
   {
     title: "Dehydrated Tomato",
     description: "Sun-dried tomatoes",
     icon: Package,
-    image: "./Images/Dehydrated Veg/tomato dehydrated.avif",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Dehydrated%20Veg/tomato%20dehydrated.avif",
     category: "dehydrated"
   },
   {
