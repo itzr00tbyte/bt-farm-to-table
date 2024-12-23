@@ -1,19 +1,33 @@
 const certifications = [
   {
-    name: "USDA Organic",
-    image: "https://placehold.co/200x100/026633/FFFFFF?text=USDA+Organic",
+    name: "FSSAI",
+    image: "https://placehold.co/200x100/026633/FFFFFF?text=FSSAI",
+    description: "Food Safety and Standards Authority of India"
   },
   {
-    name: "Non-GMO Project",
-    image: "https://placehold.co/200x100/4a2619/FFFFFF?text=Non-GMO+Project",
+    name: "APEDA",
+    image: "https://placehold.co/200x100/4a2619/FFFFFF?text=APEDA",
+    description: "Agricultural and Processed Food Products Export Development Authority"
   },
   {
-    name: "Fair Trade Certified",
-    image: "https://placehold.co/200x100/cf9817/FFFFFF?text=Fair+Trade",
+    name: "GST",
+    image: "https://placehold.co/200x100/cf9817/FFFFFF?text=GST",
+    description: "Goods and Services Tax Registration"
   },
   {
-    name: "ISO 22000",
-    image: "https://placehold.co/200x100/6e2b3e/FFFFFF?text=ISO+22000",
+    name: "IEC",
+    image: "https://placehold.co/200x100/6e2b3e/FFFFFF?text=IEC",
+    description: "Import Export Code"
+  },
+  {
+    name: "UDHYAM",
+    image: "https://placehold.co/200x100/026633/FFFFFF?text=UDHYAM",
+    description: "MSME Registration Certificate"
+  },
+  {
+    name: "INCORPORATION",
+    image: "https://placehold.co/200x100/4a2619/FFFFFF?text=INCORPORATION",
+    description: "Certificate of Incorporation"
   }
 ];
 
@@ -23,24 +37,26 @@ const Certifications = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fadeIn">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Certified By
+            Our Certifications
           </h2>
           <p className="text-lg md:text-xl text-accent-brown max-w-2xl mx-auto">
-            Our commitment to quality is recognized by leading certification bodies
+            Committed to Quality and Compliance with Indian Standards
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
           {certifications.map((cert) => (
             <div
               key={cert.name}
-              className="flex items-center justify-center p-8 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-300"
+              className="flex flex-col items-center justify-center p-8 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors duration-300"
             >
               <img
                 src={cert.image}
                 alt={cert.name}
-                className="h-20 w-auto grayscale hover:grayscale-0 transition-all duration-300"
+                className="h-20 w-auto mb-4 grayscale hover:grayscale-0 transition-all duration-300"
               />
+              <h3 className="text-lg font-semibold text-primary">{cert.name}</h3>
+              <p className="text-sm text-gray-600 text-center mt-2">{cert.description}</p>
             </div>
           ))}
         </div>
