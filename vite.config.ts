@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import { componentTagger } from "lovable-tagger";
 import path from "path";
 
-export default defineConfig(({ mode }) => ({
+export default defineConfig({
   base: "/",
   server: {
     host: "::",
@@ -17,7 +17,7 @@ export default defineConfig(({ mode }) => ({
   build: {
     outDir: "dist",
     assetsDir: "assets",
-    sourcemap: mode === "development",
+    sourcemap: true,
     minify: "esbuild",
     rollupOptions: {
       output: {
@@ -29,4 +29,4 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [react(), componentTagger()],
   publicDir: "public",
-}));
+});
