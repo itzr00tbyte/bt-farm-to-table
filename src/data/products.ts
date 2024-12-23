@@ -20,7 +20,7 @@ export const products = [
     title: "Chiku Powder",
     description: "Fresh and natural chiku powder",
     icon: Apple,
-    image: "./Images/Fruits Powders/chiku powder.webp",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Fruits%20Powders/chiku%20powder.webp",
     category: "fruit-powders"
   },
 
@@ -36,56 +36,56 @@ export const products = [
     title: "Spinach Powder",
     description: "Nutrient-rich spinach powder",
     icon: Leaf,
-    image: "./Images/Veg Powders/spinach.webp",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Veg%20Powders/spinach.webp",
     category: "vegetable-powders"
   },
   {
     title: "Beetroot Powder",
     description: "Natural beetroot powder",
     icon: Carrot,
-    image: "./Images/Veg Powders/beetroot.webp",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Veg%20Powders/beetroot.webp",
     category: "vegetable-powders"
   },
   {
     title: "Carrot Powder",
     description: "Vitamin-rich carrot powder",
     icon: Carrot,
-    image: "./Images/Veg Powders/carrot.jpg",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Veg%20Powders/carrot.jpg",
     category: "vegetable-powders"
   },
   {
     title: "Ginger Powder",
     description: "Aromatic ginger powder",
     icon: Package,
-    image: "./Images/Veg Powders/ginger.jpg",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Veg%20Powders/ginger.jpg",
     category: "vegetable-powders"
   },
   {
     title: "Garlic Powder",
     description: "Flavorful garlic powder",
     icon: Package,
-    image: "./Images/Veg Powders/garlic.avif",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Veg%20Powders/garlic.avif",
     category: "vegetable-powders"
   },
   {
     title: "White Onion Powder",
     description: "Premium white onion powder",
     icon: Package,
-    image: "./Images/Veg Powders/white onion.jpg",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Veg%20Powders/white%20onion.jpg",
     category: "vegetable-powders"
   },
   {
     title: "Red Onion Powder",
     description: "Aromatic red onion powder",
     icon: Package,
-    image: "./Images/Veg Powders/red onion.avif",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Veg%20Powders/red%20onion.avif",
     category: "vegetable-powders"
   },
   {
     title: "Moringa Powder",
     description: "Nutrient-dense moringa powder",
     icon: Leaf,
-    image: "./Images/Veg Powders/moringa.webp",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Veg%20Powders/moringa.webp",
     category: "vegetable-powders"
   },
 
@@ -101,7 +101,7 @@ export const products = [
     title: "Chilli Powder",
     description: "Premium quality chilli powder",
     icon: Wheat,
-    image: "./Images/Spices/chillipowder.jpg",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Spices/chillipowder.jpg",
     category: "spices"
   },
 
@@ -117,42 +117,42 @@ export const products = [
     title: "Dehydrated Beetroot",
     description: "Crispy dehydrated beetroot",
     icon: Package,
-    image: "./Images/Dehydrated Veg/beetroot dehydrated.jpg",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Dehydrated%20Veg/beetroot%20dehydrated.jpg",
     category: "dehydrated"
   },
   {
     title: "Dehydrated Carrot",
     description: "Crunchy dehydrated carrots",
     icon: Carrot,
-    image: "./Images/Dehydrated Veg/carrot dehydrated.avif",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Dehydrated%20Veg/carrot%20dehydrated.avif",
     category: "dehydrated"
   },
   {
     title: "Dehydrated Ginger",
     description: "Preserved ginger pieces",
     icon: Package,
-    image: "./Images/Dehydrated Veg/ginger dehydrated.avif",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Dehydrated%20Veg/ginger%20dehydrated.avif",
     category: "dehydrated"
   },
   {
     title: "Dehydrated Garlic",
     description: "Dehydrated garlic flakes",
     icon: Package,
-    image: "./Images/Dehydrated Veg/garlic dehydrated.jpeg",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Dehydrated%20Veg/garlic%20dehydrated.jpeg",
     category: "dehydrated"
   },
   {
     title: "Dehydrated White Onion",
     description: "Crispy white onion pieces",
     icon: Package,
-    image: "./Images/Dehydrated Veg/onion dehydrated.webp",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Dehydrated%20Veg/onion%20dehydrated.webp",
     category: "dehydrated"
   },
   {
     title: "Dehydrated Red Onion",
     description: "Crispy red onion pieces",
     icon: Package,
-    image: "./Images/Dehydrated Veg/redonion dehydrated.webp",
+    image: "https://raw.githubusercontent.com/yourusername/your-repo/main/Images/Dehydrated%20Veg/redonion%20dehydrated.webp",
     category: "dehydrated"
   }
 ];
