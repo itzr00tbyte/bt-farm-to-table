@@ -1,32 +1,32 @@
 const certifications = [
   {
     name: "FSSAI",
-    image: "https://placehold.co/200x100/026633/FFFFFF?text=FSSAI",
+    image: "/Images/Certifications/fssai-logo.png",
     description: "Food Safety and Standards Authority of India"
   },
   {
     name: "APEDA",
-    image: "https://placehold.co/200x100/4a2619/FFFFFF?text=APEDA",
+    image: "/Images/Certifications/apeda-logo.png",
     description: "Agricultural and Processed Food Products Export Development Authority"
   },
   {
     name: "GST",
-    image: "https://placehold.co/200x100/cf9817/FFFFFF?text=GST",
+    image: "/Images/Certifications/gst-logo.png",
     description: "Goods and Services Tax Registration"
   },
   {
     name: "IEC",
-    image: "https://placehold.co/200x100/6e2b3e/FFFFFF?text=IEC",
+    image: "/Images/Certifications/iec-logo.png",
     description: "Import Export Code"
   },
   {
     name: "UDHYAM",
-    image: "https://placehold.co/200x100/026633/FFFFFF?text=UDHYAM",
+    image: "/Images/Certifications/udhyam-logo.png",
     description: "MSME Registration Certificate"
   },
   {
     name: "INCORPORATION",
-    image: "https://placehold.co/200x100/4a2619/FFFFFF?text=INCORPORATION",
+    image: "/Images/Certifications/incorporation-logo.png",
     description: "Certificate of Incorporation"
   }
 ];
