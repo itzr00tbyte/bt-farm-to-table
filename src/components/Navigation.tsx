@@ -19,7 +19,7 @@ const Navigation = () => {
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center space-x-3">
               <img
-                src="/src/Images/BT Foods Logo File HQ.png"
+                src="../Images/BT Foods Logo File HQ.png"
                 alt="BT Foods Logo"
                 className="h-16 w-auto object-contain"
               />
@@ -29,7 +29,6 @@ const Navigation = () => {
             </Link>
           </div>
 
-          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <Link
               to="/"
@@ -51,7 +50,6 @@ const Navigation = () => {
             </Link>
           </div>
 
-          {/* Mobile Navigation Button */}
           <div className="md:hidden flex items-center">
             <Button
               variant="ghost"
@@ -69,7 +67,6 @@ const Navigation = () => {
         </div>
       </div>
 
-      {/* Mobile Navigation Menu */}
       {isOpen && isMobile && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
