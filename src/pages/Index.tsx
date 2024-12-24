@@ -5,6 +5,7 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import Testimonials from "../components/Testimonials";
 import Certifications from "../components/Certifications";
 import Footer from "../components/Footer";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 const Index = () => {
   return (
@@ -15,6 +16,7 @@ const Index = () => {
       <WhyChooseUs />
       <Testimonials />
       <Certifications />
+      <WhatsAppButton />
       <Footer />
     </div>
   );
