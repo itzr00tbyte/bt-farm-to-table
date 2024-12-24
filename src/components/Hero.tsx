@@ -59,15 +59,15 @@ const Hero = () => {
     <div className="relative h-screen w-full overflow-hidden" id="hero-carousel">
       <div className="carousel-container relative h-full">
         <div className="carousel-slide absolute inset-0 transition-opacity duration-1000 opacity-100">
-          <img src="/Public/Images/Fruits Powders/banana powder.jpg" alt="Banana Powder" className="object-cover w-full h-full" />
+          <img src="/Images/Fruits Powders/banana powder.jpg" alt="Banana Powder" className="object-cover w-full h-full" />
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         </div>
         <div className="carousel-slide absolute inset-0 transition-opacity duration-1000 opacity-0">
-          <img src="/Public/Images/Veg Powders/beetroot.webp" alt="Beetroot Powder" className="object-cover w-full h-full" />
+          <img src="/Images/Veg Powders/beetroot.webp" alt="Beetroot Powder" className="object-cover w-full h-full" />
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         </div>
         <div className="carousel-slide absolute inset-0 transition-opacity duration-1000 opacity-0">
-          <img src="/Public/Images/Dehydrated Veg/carrot dehydrated.avif" alt="Dehydrated Carrot" className="object-cover w-full h-full" />
+          <img src="/Images/Dehydrated Veg/carrot dehydrated.avif" alt="Dehydrated Carrot" className="object-cover w-full h-full" />
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
         </div>
       </div>
