@@ -1,32 +1,32 @@
 const certifications = [
   {
     name: "FSSAI",
-    image: "/Images/Certifications/fssai-logo.png",
+    image: "/Public/Images/Certifications/fssai-logo.png",
     description: "Food Safety and Standards Authority of India"
   },
   {
     name: "APEDA",
-    image: "/Images/Certifications/apeda-logo.png",
+    image: "/Public/Images/Certifications/apeda-logo.png",
     description: "Agricultural and Processed Food Products Export Development Authority"
   },
   {
     name: "GST",
-    image: "/Images/Certifications/gst-logo.jpeg",
+    image: "/Public/Images/Certifications/gst-logo.jpeg",
     description: "Goods and Services Tax Registration"
   },
   {
     name: "IEC",
-    image: "/Images/Certifications/iec-logo.webp",
+    image: "/Public/Images/Certifications/iec-logo.webp",
     description: "Import Export Code"
   },
   {
     name: "UDHYAM",
-    image: "/Images/Certifications/udhyam-logo.webp",
+    image: "/Public/Images/Certifications/udhyam-logo.webp",
     description: "MSME Registration Certificate"
   },
   {
     name: "INCORPORATION",
-    image: "/Images/Certifications/incorporation-logo.png",
+    image: "/Public/Images/Certifications/incorporation-logo.png",
     description: "Certificate of Incorporation"
   }
 ];
