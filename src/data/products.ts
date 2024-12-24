@@ -6,21 +6,21 @@ export const products = [
     title: "Banana Powder",
     description: "100% natural banana powder perfect for smoothies and baking",
     icon: Apple,
-    image: "/Public/Images/Fruits Powders/banana-powder.jpg",
+    image: "/Public/Images/Fruits Powders/banana powder.jpg",
     category: "fruit-powders"
   },
   {
     title: "Mango Powder",
     description: "Premium quality mango powder",
     icon: Apple,
-    image: "/Public/Images/Fruits Powders/mango-powder.jpg",
+    image: "/Public/Images/Fruits Powders/mango powder.jpg",
     category: "fruit-powders"
   },
   {
     title: "Chiku Powder",
     description: "Fresh and natural chiku powder",
     icon: Apple,
-    image: "/Public/Images/Fruits Powders/chiku-powder.webp",
+    image: "/Public/Images/Fruits Powders/chiku powder.webp",
     category: "fruit-powders"
   },
   // Vegetable Powders
@@ -70,14 +70,14 @@ export const products = [
     title: "White Onion Powder",
     description: "Premium white onion powder",
     icon: Package,
-    image: "/Public/Images/Veg Powders/white-onion.jpg",
+    image: "/Public/Images/Veg Powders/white onion.jpg",
     category: "vegetable-powders"
   },
   {
     title: "Red Onion Powder",
     description: "Aromatic red onion powder",
     icon: Package,
-    image: "/Public/Images/Veg Powders/red-onion.avif",
+    image: "/Public/Images/Veg Powders/red onion.avif",
     category: "vegetable-powders"
   },
   {
@@ -107,49 +107,49 @@ export const products = [
     title: "Dehydrated Tomato",
     description: "Sun-dried tomatoes",
     icon: Package,
-    image: "/Public/Images/Dehydrated Veg/tomato-dehydrated.avif",
+    image: "/Public/Images/Dehydrated Veg/tomato dehydrated.avif",
     category: "dehydrated"
   },
   {
     title: "Dehydrated Beetroot",
     description: "Crispy dehydrated beetroot",
     icon: Package,
-    image: "/Public/Images/Dehydrated Veg/beetroot-dehydrated.jpg",
+    image: "/Public/Images/Dehydrated Veg/beetroot dehydrated.jpg",
     category: "dehydrated"
   },
   {
     title: "Dehydrated Carrot",
     description: "Crunchy dehydrated carrots",
     icon: Carrot,
-    image: "/Public/Images/Dehydrated Veg/carrot-dehydrated.avif",
+    image: "/Public/Images/Dehydrated Veg/carrot dehydrated.avif",
     category: "dehydrated"
   },
   {
     title: "Dehydrated Ginger",
     description: "Preserved ginger pieces",
     icon: Package,
-    image: "/Public/Images/Dehydrated Veg/ginger-dehydrated.avif",
+    image: "/Public/Images/Dehydrated Veg/ginger dehydrated.avif",
     category: "dehydrated"
   },
   {
     title: "Dehydrated Garlic",
     description: "Dehydrated garlic flakes",
     icon: Package,
-    image: "/Public/Images/Dehydrated Veg/garlic-dehydrated.jpeg",
+    image: "/Public/Images/Dehydrated Veg/garlic dehydrated.jpeg",
     category: "dehydrated"
   },
   {
     title: "Dehydrated White Onion",
     description: "Crispy white onion pieces",
     icon: Package,
-    image: "/Public/Images/Dehydrated Veg/onion-dehydrated.webp",
+    image: "/Public/Images/Dehydrated Veg/onion dehydrated.webp",
     category: "dehydrated"
   },
   {
     title: "Dehydrated Red Onion",
     description: "Crispy red onion pieces",
     icon: Package,
-    image: "/Public/Images/Dehydrated Veg/redonion-dehydrated.webp",
+    image: "/Public/Images/Dehydrated Veg/redonion dehydrated.webp",
     category: "dehydrated"
   }
 ];
