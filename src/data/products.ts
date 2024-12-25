@@ -23,6 +23,7 @@ export const products = [
     image: "Images/Fruits Powders/chiku powder.webp",
     category: "fruit-powders"
   },
+  
   // Vegetable Powders
   {
     title: "Tomato Powder",
@@ -87,6 +88,7 @@ export const products = [
     image: "Images/Veg Powders/moringa.webp",
     category: "vegetable-powders"
   },
+  
   // Spices
   {
     title: "Chilli",
@@ -102,6 +104,7 @@ export const products = [
     image: "Images/Spices/chillipowder.jpg",
     category: "spices"
   },
+  
   // Dehydrated Vegetables
   {
     title: "Dehydrated Tomato",
@@ -135,7 +138,7 @@ export const products = [
     title: "Dehydrated Garlic",
     description: "Dehydrated garlic flakes",
     icon: Package,
-    image: "Images/Dehydrated Veg/garlic dehydrated.jpeg",
+    image: "Images/Dehydrated Veg/dehydrated garlic.jpeg",
     category: "dehydrated"
   },
   {
