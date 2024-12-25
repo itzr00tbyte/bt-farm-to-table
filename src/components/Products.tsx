@@ -16,7 +16,7 @@ const Products = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
-            Our Products
+            Premium quality products
           </h2>
           <p className="text-lg md:text-xl text-accent-brown max-w-2xl mx-auto mb-8">
             From farm to table, we deliver premium quality ingredients that preserve nature's goodness
