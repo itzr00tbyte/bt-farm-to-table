@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
-import { Users, Globe, MessageCircle } from "lucide-react";
+import { Users, Globe, MessageCircle, Leaf, Factory, Heart } from "lucide-react";
 
 const AboutContact = () => {
   return (
@@ -16,46 +16,48 @@ const AboutContact = () => {
           </div>
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h2 className="text-2xl font-bold text-primary-dark mb-4">Our Story</h2>
+              <h2 className="text-2xl font-bold text-primary-dark mb-4">Welcome to BT Foods</h2>
               <p className="text-foreground leading-relaxed font-medium">
-                BT Foods has been at the forefront of sustainable food production since our inception. 
-                We believe in bringing the freshest, highest-quality products from farm to table, 
-                while supporting local farmers and maintaining environmentally conscious practices.
+                Welcome to our world of nutritious and versatile products that seamlessly blend into your daily life. 
+                Whether you're looking to add a burst of flavor, garnish your favorite dishes, or enhance the nutrition 
+                of smoothies, juices, baked goods, and more, we've got you covered. With our range of high-quality 
+                dehydrated offerings, there's no need to compromise on taste or health.
               </p>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h2 className="text-2xl font-bold text-primary-dark mb-4">Our Mission</h2>
+              <h2 className="text-2xl font-bold text-primary-dark mb-4">Our Location</h2>
               <p className="text-foreground leading-relaxed font-medium">
-                Our mission is to provide exceptional food products while promoting sustainable 
-                agriculture and supporting local farming communities. We strive to maintain the 
-                highest standards of quality while ensuring environmental responsibility.
+                Located in the lush and fertile lands of Palnadu district, our journey begins in Edlapadu Mandalam, 
+                Unnava Village. From this vibrant corner of Andhra Pradesh, we proudly distribute premium dehydrated 
+                products to households and businesses alike. Our registered office serves as the hub of innovation 
+                and quality, where every product is crafted with care and precision.
               </p>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h2 className="text-2xl font-bold text-primary-dark mb-4">Our Values</h2>
+              <h2 className="text-2xl font-bold text-primary-dark mb-4">Our Products</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
-                    <Globe className="w-5 h-5 text-primary" />
-                    <h3 className="text-xl font-bold text-primary">Quality</h3>
+                    <Leaf className="w-5 h-5 text-primary" />
+                    <h3 className="text-xl font-bold text-primary">Vegetable Powders</h3>
                   </div>
-                  <p className="text-foreground font-medium">We never compromise on the quality of our products.</p>
+                  <p className="text-foreground font-medium">Convenient, long-lasting, and nutrient-packed, perfect for soups, sauces, and seasonings.</p>
                 </div>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
-                    <Globe className="w-5 h-5 text-primary" />
-                    <h3 className="text-xl font-bold text-primary">Sustainability</h3>
+                    <Heart className="w-5 h-5 text-primary" />
+                    <h3 className="text-xl font-bold text-primary">Fruit Powders</h3>
                   </div>
-                  <p className="text-foreground font-medium">Environmental responsibility is at our core.</p>
+                  <p className="text-foreground font-medium">A natural boost for your smoothies, desserts, and breakfast bowls.</p>
                 </div>
                 <div className="space-y-2">
                   <div className="flex items-center gap-2">
-                    <Globe className="w-5 h-5 text-primary" />
-                    <h3 className="text-xl font-bold text-primary">Community</h3>
+                    <Factory className="w-5 h-5 text-primary" />
+                    <h3 className="text-xl font-bold text-primary">Dehydrated Products</h3>
                   </div>
-                  <p className="text-foreground font-medium">Supporting local farmers and communities.</p>
+                  <p className="text-foreground font-medium">Enjoy the taste of freshness any time, ideal for snacks, meal preps, and gourmet creations.</p>
                 </div>
               </div>
             </div>
