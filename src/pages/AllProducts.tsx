@@ -58,7 +58,7 @@ const AllProducts = () => {
               >
                 <div className="relative aspect-square overflow-hidden">
                   <img
-                    src="Images/Spices/chilli.jpg"
+                    src={product.image}
                     alt={product.title}
                     className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
                     loading="lazy"
