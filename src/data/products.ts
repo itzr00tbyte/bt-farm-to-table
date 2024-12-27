@@ -94,7 +94,7 @@ export const products = [
     title: "Chilli",
     description: "AI generated dehydrated chilli",
     icon: Wheat,
-    image: "Images/Dehydrated Veg/dehydrated chilli.jpg",
+    image: "Images/Spices/dehydrated chilli.jpg",
     category: "spices"
   },
   {
