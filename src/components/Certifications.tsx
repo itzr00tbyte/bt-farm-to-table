@@ -26,7 +26,7 @@ const certifications = [
   },
   {
     name: "INCORPORATION",
-    image: "Images/Certifications/incorporation-logo.png",
+    image: "Images/Certifications/central logo.png",
     description: "Certificate of Incorporation"
   }
 ];
