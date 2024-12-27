@@ -1,4 +1,3 @@
-import { MessageSquare } from "lucide-react";
 import { Button } from "./ui/button";
 
 const WhatsAppButton = () => {
@@ -10,9 +9,13 @@ const WhatsAppButton = () => {
   return (
     <Button
       onClick={handleWhatsAppClick}
-      className="fixed bottom-8 right-8 rounded-full w-16 h-16 bg-green-500 hover:bg-green-600 shadow-lg z-50 flex items-center justify-center"
+      className="fixed bottom-8 right-8 rounded-full w-16 h-16 p-0 shadow-lg z-50 flex items-center justify-center bg-transparent hover:bg-transparent"
     >
-      <MessageSquare className="w-10 h-10 text-white" />
+      <img 
+        src="/Images/whatsapp-icon.png" 
+        alt="WhatsApp"
+        className="w-14 h-14"
+      />
     </Button>
   );
 };
