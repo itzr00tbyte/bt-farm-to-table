@@ -1,6 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { Users, Globe, MessageCircle, Leaf, Factory, Heart, Award, Shield, Truck } from "lucide-react";
 
 const AboutContact = () => {
@@ -115,6 +116,7 @@ const AboutContact = () => {
           </div>
         </section>
       </div>
+      <WhatsAppButton />
       <Footer />
     </div>
   );

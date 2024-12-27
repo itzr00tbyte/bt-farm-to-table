@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 import { useState } from "react";
 import { products, categories } from "@/data/products";
 
@@ -80,6 +81,7 @@ const AllProducts = () => {
           </div>
         </div>
       </section>
+      <WhatsAppButton />
       <Footer />
     </div>
   );
