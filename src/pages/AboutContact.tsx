@@ -11,13 +11,16 @@ const AboutContact = () => {
         {/* About Section */}
         <section className="mb-16">
           <div className="flex items-center justify-center gap-3 mb-8">
-            <Users className="w-8 h-8 text-primary" />
+            <Users className="w-8 h-8 text-primary animate-bounce" />
             <h1 className="text-4xl font-extrabold text-primary text-center">About Us</h1>
           </div>
           <div className="space-y-8">
-            <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h2 className="text-2xl font-bold text-primary-dark mb-4">Our Story</h2>
-              <p className="text-foreground leading-relaxed font-medium">
+            <div className="bg-white p-12 rounded-xl shadow-lg transform hover:scale-[1.02] transition-all duration-300 animate-fadeIn">
+              <h2 className="text-3xl font-bold text-primary-dark mb-6 relative">
+                Our Story
+                <span className="absolute bottom-0 left-0 w-20 h-1 bg-primary transform origin-left transition-all duration-300 group-hover:w-full"></span>
+              </h2>
+              <p className="text-foreground leading-relaxed font-medium text-lg">
                 BT Foods has been at the forefront of sustainable food production since our inception. 
                 We believe in bringing the freshest, highest-quality products from farm to table, 
                 while supporting local farmers and maintaining environmentally conscious practices.
@@ -65,7 +68,7 @@ const AboutContact = () => {
         {/* Contact Section */}
         <section>
           <div className="flex items-center justify-center gap-3 mb-8">
-            <MessageCircle className="w-8 h-8 text-primary" />
+            <MessageCircle className="w-8 h-8 text-primary animate-bounce" />
             <h2 className="text-4xl font-extrabold text-primary text-center">Contact Us</h2>
           </div>
           <div className="max-w-xl mx-auto">
