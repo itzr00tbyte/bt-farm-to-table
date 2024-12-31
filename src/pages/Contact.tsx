@@ -21,15 +21,15 @@ const Contact = () => {
     
     try {
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        'service_16b56ma', // Replace with your EmailJS service ID
+        'template_dgm2566', // Replace with your EmailJS template ID
         {
           from_name: formData.get('name'),
           from_email: formData.get('email'),
           message: formData.get('message'),
           to_email: 'weinboxtales@gmail.com'
         },
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        'rM7-TizWExq5K2YCP' // Replace with your EmailJS public key
       );
 
       toast({
